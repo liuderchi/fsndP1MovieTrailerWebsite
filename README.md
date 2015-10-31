@@ -1,6 +1,6 @@
 ## Synopsis
 
-  - This is a Udacity Full Stack Nanodegree project \#1 that generating a HTML web page displaying movies trailers and their basic information.
+  - This is a Udacity Full Stack Nanodegree project \#1 that generates a HTML web page displaying movies trailers and their basic information.
   - Supported by *adarsh0806* and *adarsh0806*'s github repo:  https://github.com/adarsh0806/ud036_StarterCode
 
 ## Environment
