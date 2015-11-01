@@ -16,9 +16,9 @@ class Movie():
         poster_image_url: A string represeting movie poster image URL.
         trailer_youtube_url: A string represeting movie trailer URL.
     """
-    def __init__(self, title, storyline, posterImage, youtubeURL):
+    def __init__(self, title, storyline, poster_image_url, trailer_youtube_url):
         """Inits Movie Class."""
         self.title = title
         self.storyline = storyline
-        self.poster_image_url = posterImage
-        self.trailer_youtube_url = youtubeURL
+        self.poster_image_url = poster_image_url
+        self.trailer_youtube_url = trailer_youtube_url

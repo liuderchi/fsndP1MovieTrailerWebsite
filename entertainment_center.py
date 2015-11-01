@@ -134,7 +134,7 @@ movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2>
-    <h4>{storyline}</h4>
+    <p style="text-align: left">{storyline}</p>
 </div>
 '''
 
@@ -187,19 +187,27 @@ def open_movies_page(movies):
 
 
 movie_i_robot = media.Movie("I, Robot",
-                            "In 2035 a technophobic cop investigates a crime that may have been perpetrated by a robot, which leads to a larger threat to humanity.",
+                            ("In 2035 a technophobic cop investigates a crime "
+                            "that may have been perpetrated by a robot, which "
+                            "leads to a larger threat to humanity."),
                             "https://upload.wikimedia.org/wikipedia/en/3/3b/Movie_poster_i_robot.jpg",
                             "https://www.youtube.com/watch?v=rL6RRIOZyCM")
 
 movie_big_hero_6 = media.Movie("Big Hero 6",
-                                "The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.",
+                                ("The special bond that develops between "
+                                "plus-sized inflatable robot Baymax, and prodigy"
+                                " Hiro Hamada, who team up with a group of friends"
+                                " to form a band of high-tech heroes."),
                                 "https://upload.wikimedia.org/wikipedia/en/4/4b/Big_Hero_6_%28film%29_poster.jpg",
-                                "https://www.youtube.com/watch?v=rD5OA6sQ97M",)
+                                "https://www.youtube.com/watch?v=rD5OA6sQ97M")
 
 movie_minions = media.Movie("Minions",
-                            "Minions Stuart, Kevin and Bob are recruited by Scarlett Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
+                            ("Minions Stuart, Kevin and Bob are recruited by "
+                            "Scarlett Overkill, a super-villain who, alongside "
+                            "her inventor husband Herb, hatches a plot to take "
+                            "over the world."),
                             "https://upload.wikimedia.org/wikipedia/en/3/3d/Minions_poster.jpg",
-                            "https://www.youtube.com/watch?v=o8hxFE7RpSg",)
+                            "https://www.youtube.com/watch?v=o8hxFE7RpSg")
 
 movies = [movie_i_robot, movie_big_hero_6, movie_minions]
 print('Generating web page of your %d movies...' %  len(movies) )
